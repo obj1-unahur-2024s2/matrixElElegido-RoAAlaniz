@@ -1,7 +1,20 @@
-
-
+import matrix.*
 describe "Test sobre los pasajeros de la nave." {
+  test "En la nave hay solo 3 pasajeros" {
+    assert.equals(3, nave.cantidadPasajeros())  
+  }
 
-  
+  test "Hay al menos un elegido en la nave" {
+    assert.that(nave.estaElElegido())
+  }
 
+  test "Morfeo se cansa al saltar." {
+    morfeo.saltar()
+    assert.that(morfeo.estaCansado()) 
+  }
+
+  test "Neo se baja de la nave y quedan solo 2 pasajeros." {
+    nave.bajarA(neo)
+    assert.equals(2, nave.cantidadPasajeros())
+  }
 }
