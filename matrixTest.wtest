@@ -1,9 +1,7 @@
 
 
-describe "group of tests " {
+describe "Test sobre los pasajeros de la nave." {
 
-  test "test 01" {
-    assert.equals(100, 50+50)
-  }
+  
 
 }
